@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jonah Lage - Software Developer Portfolio">
+    <title>Jonah Lage | Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">JL</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="glitch" data-text="JONAH LAGE">JONAH LAGE</h1>
+            <p class="hero-subtitle fade-in">Software Developer</p>
+            <p class="hero-description fade-in-delay">Building innovative solutions at the intersection of technology and creativity</p>
+            <a href="#projects" class="cta-button">
+                <span>View My Work</span>
+                <div class="button-glow"></div>
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content" data-aos="fade-up" data-aos-delay="100">
+                <div class="about-text">
+                    <p>I'm a passionate software developer currently working at a startup, where I contribute to building cutting-edge solutions that make a real impact.</p>
+                    <p>My expertise spans full-stack development, with a focus on creating intuitive, scalable, and secure applications. I thrive on solving complex problems and turning innovative ideas into reality.</p>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">💻</div>
+                            <h3>Full-Stack Development</h3>
+                            <p>Building robust applications from front to back</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🎨</div>
+                            <h3>UI/UX Design</h3>
+                            <p>Creating beautiful, user-centered experiences</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🔒</div>
+                            <h3>Security First</h3>
+                            <p>Implementing best practices for secure code</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">⚡</div>
+                            <h3>Performance</h3>
+                            <p>Optimizing for speed and efficiency</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- TwiLight Smart Home Project -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/jonahlage/twilight-smart-home" target="_blank" class="project-link">
+                                    <span>View Code</span>
+                                </a>
+                                <a href="#" class="project-link disabled">
+                                    <span>Live Demo (Coming Soon)</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-bg twilight-bg"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>TwiLight Smart Home</h3>
+                        <p>A full-featured smart home control application for browser and mobile. Connect and control any smart device—lights, fans, thermostats, and more—all from one beautiful interface.</p>
+                        <div class="project-tags">
+                            <span class="tag">IoT</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Mobile</span>
+                        </div>
+                        <span class="project-type">Web & Mobile App</span>
+                    </div>
+                </div>
+
+                <!-- Placeholder for future projects -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="coming-soon-badge">Coming Soon</div>
+                        </div>
+                        <div class="project-bg placeholder-bg"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>More Projects Coming</h3>
+                        <p>Stay tuned for more exciting projects showcasing innovative solutions and creative implementations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <div class="contact-content" data-aos="fade-up" data-aos-delay="100">
+                <p>Interested in collaborating or have a project in mind? Let's connect!</p>
+                <div class="contact-links">
+                    <a href="https://github.com/jonahlage" target="_blank" class="contact-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Jonah Lage. Built with passion and code.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
