@@ -89,21 +89,65 @@
             <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
             <div class="projects-grid">
                 <!-- TwiLight Smart Home Project -->
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-card twilight-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="project-image">
+                        <!-- Promo video replaces the gradient background -->
+                        <video
+                            class="twilight-video"
+                            src="twilight-promo.mp4"
+                            muted
+                            loop
+                            playsinline
+                            preload="metadata"
+                            aria-label="TwiLight Smart Home promo video"
+                        ></video>
+
+                        <!-- Semi-transparent overlay with links (visible on hover) -->
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="https://github.com/jonahlage/twilight-smart-home" target="_blank" class="project-link">
                                     <span>View Code</span>
                                 </a>
-                                <a href="#" class="project-link disabled">
-                                    <span>Live Demo (Coming Soon)</span>
+                                <a href="https://jonahlage.github.io/twilight-smart-home/" target="_blank" class="project-link">
+                                    <span>Live Demo</span>
                                 </a>
                             </div>
                         </div>
-                        <div class="project-bg twilight-bg"></div>
+
+                        <!-- Mini audio toggle button (top-right, appears on hover) -->
+                        <button class="audio-toggle-btn" aria-label="Toggle audio" title="Play audio">
+                            <!-- Music note SVG icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M9 3v10.55A4 4 0 1 0 11 17V7h4V3H9z"/>
+                            </svg>
+                        </button>
+
+                        <!-- Mini audio player bar (expands from top of card) -->
+                        <div class="mini-player" role="region" aria-label="Audio player">
+                            <button class="mini-play-btn" aria-label="Play/Pause audio">
+                                <!-- Play icon (default) -->
+                                <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                                <!-- Pause icon (shown when playing) -->
+                                <svg class="icon-pause" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                                </svg>
+                            </button>
+                            <div class="mini-progress-track" role="progressbar" aria-label="Audio progress">
+                                <div class="mini-progress-fill"></div>
+                            </div>
+                            <span class="mini-time">0:00</span>
+                            <button class="mini-close-btn" aria-label="Close audio player">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <div class="project-info">
+
+                    <!-- Clickable project info section -->
+                    <a href="https://jonahlage.github.io/twilight-smart-home/" target="_blank" class="project-info project-info-link">
                         <h3>TwiLight Smart Home</h3>
                         <p>A full-featured smart home control application for browser and mobile. Connect and control any smart device—lights, fans, thermostats, and more—all from one beautiful interface.</p>
                         <div class="project-tags">
@@ -113,7 +157,7 @@
                             <span class="tag">Mobile</span>
                         </div>
                         <span class="project-type">Web & Mobile App</span>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Image Converter Project -->
