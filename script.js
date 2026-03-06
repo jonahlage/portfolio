@@ -138,9 +138,10 @@ function sanitizeInput(input) {
 
 // Performance monitoring
 window.addEventListener('load', () => {
-    const perfData = window.performance.timing;
-    const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
-    console.log(`Page load time: ${pageLoadTime}ms`);
+    const [navEntry] = performance.getEntriesByType('navigation');
+    if (navEntry) {
+        console.log(`Page load time: ${Math.round(navEntry.loadEventEnd - navEntry.startTime)}ms`);
+    }
 });
 
 // Keyboard navigation accessibility
